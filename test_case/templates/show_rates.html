@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for exchange_rate in exchange_rates %}
+    <p>{{ exchange_rate.currency }}: {{ exchange_rate.value }}</p>
+{% empty %}
+    <p>There is no currency in this date.</p>
+{% endfor %}
+
+</body>
+</html>
