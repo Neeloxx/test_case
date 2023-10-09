@@ -6,7 +6,7 @@ class Currency(models.Model):
     name = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.char_code
+        return f'{self.name}({self.char_code})'
 
 
 class Exchange(models.Model):
